@@ -1,4 +1,4 @@
-#!C:\Gray-Pepper\extras\python3\python.exe
+#!python.exe                              
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine

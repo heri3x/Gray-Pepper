@@ -1,4 +1,4 @@
-#!C:\Gray-Pepper\extras\python3\python.exe
+#!python.exe                              
 #
 # The Python Imaging Library.
 # $Id$
