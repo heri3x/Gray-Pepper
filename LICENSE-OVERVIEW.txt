@@ -1,0 +1,23 @@
+# License Overview
+
+
+## Python3
+- directory : extras/python3/...
+- license : PSFL 2.0
+- see: https://opensource.org/licenses/Python-2.0
+
+## PyQt5
+- directory : extras/python3/...
+- license : LGPL 3
+- see: http://doc.qt.io/qt-5/lgpl.html
+- see: https://riverbankcomputing.com/commercial/license-faq
+
+## Python Imaging Library (PIL)
+- directory : extras/python3/...
+- license : PIL License
+- see: http://pythonware.com/products/pil/license.htm
+
+## Resources
+- directory : resources/...
+- see: resources/LICENSE_LIST.txt
+
