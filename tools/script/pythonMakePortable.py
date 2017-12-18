@@ -10,7 +10,7 @@ import os
 
 #
 def findTextBlock( data, textBlockBegin, textBlockEnd ):
-    end = data.rfind(textBlockEnd)
+    end = data.find(textBlockEnd)
     if end == -1:
         return None
     begin = data.rfind(textBlockBegin, 0, end)
@@ -38,7 +38,14 @@ toolDirPath = r"extras\python3\Scripts"
 
 for filename in os.listdir(toolDirPath):
     targetPath = os.path.join(toolDirPath, filename)
-    print("found: {}".format(targetPath))
+    if os.path.isdir(targetPath):
+        continue
+
+    dummy, extension = os.path.splitext(targetPath)
+    if not extension in [".exe", ".py"]:
+        continue
+
+    print("target: {}".format(targetPath))
 
     with open(targetPath, "r+b") as targetFile:
         data = targetFile.read()
@@ -48,7 +55,7 @@ for filename in os.listdir(toolDirPath):
             print("[ERROR] target string not found:\n  {0} ... {1}".format(dstHeader, dstFooter))
             sys.exit(-1)
         
-        data = replaceTextPadRight(data, found[0], found[1], textToReplace, b"\0")
+        data = replaceTextPadRight(data, found[0], found[1], textToReplace, b" ")
         if data is None:
             print("[ERROR] replace size over for string:\n  {0}".format(textToReplace))
             sys.exit(-1)
