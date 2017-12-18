@@ -1,0 +1,6 @@
+# LICENSE_LIST.txt
+
+## Mona_Lisa.jpg
+
+- license: public domain
+- see: https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg
