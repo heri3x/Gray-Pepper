@@ -1,9 +1,42 @@
 
 =======================================================================
-  Python3
+  License Overview
 =======================================================================
 
-See python3/LICENSE.txt.
+## Python3
+- directory : extras/python3/...
+- license : PSFL 2.0
+- see: https://opensource.org/licenses/Python-2.0
+
+## PyQt5
+- directory : extras/python3/...
+- license : LGPL 3
+- see: http://doc.qt.io/qt-5/lgpl.html
+- see: https://riverbankcomputing.com/commercial/license-faq
+
+## Python Imaging Library (PIL)
+- directory : extras/python3/...
+- license : PIL License
+- see: http://pythonware.com/products/pil/license.htm
+
+## Node.js
+- directory : extras/nodejs/...
+- license : MIT Lisence, etc.
+- see: https://github.com/nodejs/node/blob/master/LICENSE
+
+## Electron
+- directory : node_modules/...
+- license : MIT Lisence
+- see: https://github.com/electron/electron/blob/master/LICENSE
+
+## moment.js
+- directory : node_modules/moment
+- license : MIT Lisence
+- see: https://github.com/moment/moment/blob/develop/LICENSE
+
+## Resources
+- directory : resources/...
+- see: resources/LICENSE_LIST.txt
 
 
 =======================================================================
