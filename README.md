@@ -20,7 +20,7 @@
 
 Git for Windowsをインストールしているなら管理者権限でGit Bashを開き、下記を実行してgitの設定を変更する。
 
-    > git config --global core.longpaths=true
+    > git config --global core.longpaths true
 
 これで Git Bash や SourceTree ではクローン時のエラーが出なくなる。ただし GitKraken ではエラーが出る（解決方法不明）。
 
