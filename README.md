@@ -10,7 +10,7 @@
 
     fatal: cannot create directory at '...' : Filename too long
 
-下記の２つの対策方法がある。
+回避方法が２つある。
 
 ### (A) Cドライブのすぐ下にクローンする
 
@@ -22,7 +22,7 @@ Git for Windowsをインストールしているなら管理者権限でGit Bash
 
     > git config --global core.longpaths true
 
-これで Git Bash や SourceTree ではクローン時のエラーが出なくなる。ただし GitKraken ではエラーが出る（解決方法不明）。
+これで Git Bash と SourceTree ではクローン時のエラーが出なくなる。ただし GitKraken では解決できない (内部で利用している [libgit2がlongpathsに対応していない](https://github.com/libgit2/libgit2/issues/3053)のが原因とのこと)。
 
 ## プロンプトの起動
 
