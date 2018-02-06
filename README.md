@@ -54,32 +54,32 @@ npm のインストール済みパッケージ一覧を表示。
 
 ### PyQt5
 
-    > python .\testcode\pyqt5_test.py
+    > python scripts\testcode\pyqt5_test.py
 
 ### Pillow
 
-    > python .\testcode\pillow_test.py
+    > python scripts\testcode\pillow_test.py
 
 ### Electron
 
-    > pushd .\testcode\electron-quick-start\
+    > pushd scripts\testcode\electron-quick-start\
     > npm start
     > popd
 
 ### Moment.js
 
-    > node .\testcode\moment_test.js
+    > node scripts\testcode\moment_test.js
 
 ### PowerShell
 
-    > .\testcode\powershell_test.ps1
+    > .\scripts\testcode\powershell_test.ps1
 
 ## ツール類の更新
 
 ### pip の管理パッケージ更新（pip自体の更新も含む）
 
     > pip list --outdated --format=legacy | %{$_.Split(" ")[0]} | %{pip install -U $_}
-    > tools/PythonMakePortable.bat
+    > scripts/PythonMakePortable.bat
 
 パッケージ更新時にスクリプトにフルパスが埋め込まれ他環境で動かなくなることがあるため、2行目でこれを修正するバッチを実行している。
 
