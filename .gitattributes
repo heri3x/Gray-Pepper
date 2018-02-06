@@ -1,0 +1,155 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Text
+*.txt text
+*.md text
+*.html text
+*.htm text
+*.css text
+*.xml text
+*.json text
+*.yml text
+*.yaml text
+*.json5 text
+*.csv text
+*.tcl text
+
+# SourceFile
+*.cs text
+*.py text
+*.rb text
+*.js text
+*.java text
+*.m text
+*.mm text
+*.go text
+*.coffee text
+*.php text
+*.sh text
+*.ps1 text
+*.bat text eol=crlf
+*.cmd binary
+
+# SourceFile C++
+*.c text
+*.cc text
+*.cpp text
+*.cxx text
+*.h text
+*.hh text
+*.hpp text
+*.hxx text
+
+# SourceFile Shader
+*.glsl text
+*.vert text
+*.frag text
+*.geom text
+*.hlsl text
+*.fx text
+*.psh text
+*.vsh text
+*.cg text
+*.cgfx text
+
+# image
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tga binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.svg binary
+*.ico binary
+*.psd binary
+*.ai binary
+*.xcf binary
+*.clip binary
+
+# Audio
+*.mp3 binary
+*.ogg binary
+*.oga binary
+*.wav binary
+*.aif binary
+*.aiff binary
+
+# Video
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.avi binary
+*.ogv binary
+
+# 3D Object
+*.obj binary
+*.fbx binary
+*.FBX binary
+*.blend binary
+*.mqo binary
+*.pmx binary
+*.pmd binary
+*.lwo binary
+*.lws binary
+
+# Office
+*.docx binary
+*.doc binary
+*.xlsx binary
+*.xls binary
+*.pptx binary
+*.ppt binary
+*.odt binary
+*.ods binary
+*.odp binary
+
+# Document
+*.pdf binary
+*.chm binary
+
+# Archive
+*.zip binary
+*.gz binary
+*.cat binary
+*.tar binary
+*.7z binary
+
+# Font
+*.otf binary
+*.ttf binary
+*.ttc binary
+
+# Compiler
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.lib binary
+*.a binary
+*.o binary
+
+*.pyc binary
+*.pyo binary
+*.pyd binary
+
+*.sln text eol=crlf
+
+#------------------------------------------------------
+## Unity ##
+
+*.cs diff=csharp text
+*.cginc text
+*.shader text
+
+*.mat merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.physicsMaterial merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
